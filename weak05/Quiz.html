@@ -12,23 +12,37 @@
     />
   </head>
   <body>
+    <form name="form1" method="POST" action="/Webregister/pages/index_insert_nm.php" enctype="multipart/form-data" onSubmit="JavaScript:return fncSubmit();"> 
+        <div class="form-input clear">
+          <label class="one_half first" >คณะ / สาขาที่ต้องการสมัคร<span style="color: red"> *</span><br>
+            <select name="branch_insert" type="VARCHAR" id="branch_insert" class="test" onchange="showHintn(this.value)">
+              <option value="">เลือก...</option>
+                            <option value="15311000001">
+              วิทยาการคอมพิวเตอร์            </option>
+                            
+                          
+                          </select>
+          </label>      
+        </div>
     
-    <h1>Hello, world!</h1>
-    <form class="row g-3 needs-validation" novalidate>
-      <div class="col-md-4">
-        <label for="validationCustom01" class="form-label"
-          >คณะ/สาขาที่ต้องการสมัคร</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="validationCustom01"
-          value="Mark"
-          required
+        <form name="form1" method="POST" action="/Webregister/pages/index_insert_nm.php" enctype="multipart/form-data" onSubmit="JavaScript:return fncSubmit();"> 
+            <div class="form-input clear">
+              <label class="one_half first" >สัญชาติ<span style="color: red"> *</span><br>
+                <select name="branch_insert" type="VARCHAR" id="branch_insert" class="test" onchange="showHintn(this.value)">
+                  <option value="">เลือก...</option>
+                  <option value=>
+                    คนไทย           </option>
+                    <option value=>
+                        ต่างชาติ            </option>
         />
+       
         <div class="valid-feedback">สัญชาติ</div>
-      </div>
+        
+      
       <div class="col-md-4">
+        <div class="row g-2">
+
+        </div>
         <label for="validationCustom02" class="form-label">สัญชาติ</label>
         <input
           type="text"
